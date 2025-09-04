@@ -1,0 +1,17 @@
+tools:
+  - class_name: "verl.tools.sql_tool.SqlTool"
+    config: 
+      type: native
+    tool_schema:
+      type: "function"
+      function:
+        name: "sql_exec_result"
+        description: "A tool for executing SQL code. It will return the query results from the database, saving only the first three rows."
+        parameters:
+          type: "object"
+          properties:
+            sql:
+              type: "string"
+              description: "The SQL execution syntax must comply with SQLite format."
+          "enum": null
+          required: ["sql"]

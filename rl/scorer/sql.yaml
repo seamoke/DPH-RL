@@ -1,0 +1,24 @@
+ScorerServer:
+  
+Scorers:
+  Scorer1:
+      class_name: SqlDetailRewardModel
+      database_path:  '/cache/'
+      num_instances: 64
+      
+
+
+  MeanStd:
+      class_name: MeanStd
+      keyname: 'sql_execution_reward'
+      num_instances: 1
+      num_cpus: 16
+  Dummy:
+      class_name: DummyPostProcessor
+      num_instances: 16
+      
+Chains:
+  chain1:
+    scorers: [Scorer1 ]
+    #MeanStd
+    post_scorers: [ Dummy]
