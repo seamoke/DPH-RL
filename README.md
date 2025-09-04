@@ -14,7 +14,7 @@
 ## Data Prepared
 This repo is forked from [verl](https://github.com/volcengine/verl). 
 For SQL tasks, you need to load the databases. Please download the bird train and dev databases from [bird bench](https://bird-bench.github.io/), spider dev databases from [spider](https://drive.google.com/file/d/1403EGqzIDoHMdQF4c9Bkyl7dZLZ5Wt6J/view?usp=sharing). Then copy the databases to your local dir `/cache/`. Your /cache/ directory should look like the image below.
-![alt text](figures/image.png)
+![alt text](./figures/image.png)
 
 Our data is split into three parts:
 
