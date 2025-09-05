@@ -1279,8 +1279,6 @@ class RayPPOTrainer:
                         )
                         if sft_batch is not None:
                             sft_batch.non_tensor_batch["uid"] = np.array([str(uuid.uuid4()) for _ in range(len(sft_batch.batch))], dtype=object)
-                        if sft_batch is not None:
-                            sft_batch.non_tensor_batch["uid"] = np.array([str(uuid.uuid4()) for _ in range(len(sft_batch.batch))], dtype=object)
                         # repeat to align with repeated responses in rollout
                         batch = batch.repeat(repeat_times=self.config.actor_rollout_ref.rollout.n, interleave=True)
 
@@ -1342,11 +1340,7 @@ class RayPPOTrainer:
                         print("sft batch keys: ", sft_batch.non_tensor_batch.keys())
 
                         batch = DataProto.concat([batch,sft_batch])
-                    print("batch keys: ", batch.non_tensor_batch.keys())
-                    if sft_batch is not None:
-                        print("sft batch keys: ", sft_batch.non_tensor_batch.keys())
-
-                        batch = DataProto.concat([batch,sft_batch])
+                        
                     with marked_timer("reward", timing_raw, color="yellow"):
                         # compute reward model score
                         if self.use_rm:
