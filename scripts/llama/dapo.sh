@@ -242,8 +242,8 @@ if [ "$NODE_RANK" = "0" ]; then
         trainer.nnodes=${NNODES} \
         trainer.save_freq=80 \
         trainer.test_freq=40 \
-        trainer.default_local_dir=$PROJECT_DIR/rl_models/sql_llama8b/grpo_reversekl \
-        data.train_files=$PROJECT_DIR//data/sql/llama3.1-8b/train_wrong.parquet \
+        trainer.default_local_dir=$PROJECT_DIR/rl_models/sql_llama8b/dapo \
+        data.train_files=$PROJECT_DIR//data/sql/bird_train.parquet \
         data.val_files=$PROJECT_DIR//data/sql/bird_dev.parquet \
         trainer.total_epochs=30
 
