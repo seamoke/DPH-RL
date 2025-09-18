@@ -3,11 +3,64 @@
 # The Choice of Divergence: A Neglected Key to Mitigating Diversity Collapse in Reinforcement Learning with Verifiable Reward
 
 
+<p align="center">
+  <!-- Badges: replace placeholders with real links -->
+  <a href="https://arxiv.org/abs/2509.07430"><img src="https://img.shields.io/badge/arXiv-2509.07430-B31B1B.svg" alt="arXiv"></a>
+  <a href="https://github.com/EIT-NLP/LLaSO"><img src="https://img.shields.io/github/stars/seamoke/DPH-RL?style=social" alt="GitHub Stars"></a>
+  <a href="#citation"><img src="https://img.shields.io/badge/Cite-BibTeX-9cf.svg" alt="Cite"></a>
+</p>
+
 
 </div>
 
+<p align="center">
+  If you find DPH-RL useful, please ⭐ star this repo!
+</p>
+
+## 🔍 What is DPH-RL?
+DPH-RL is an RL algorithm improved upon GRPO. It maintains policy diversity by pre-calculating the f-divergence from reference policy samples, which removes the need to load a reference model.
+
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="./figures/method.png" width="" alt="Method"><br>
+        <i>Method</i>
+      </td>
+    </tr>
+  </table>
+</p>
+<p align='center'> <i>
+</i></p>
+
+### Result
+Math and SQL generation experiments show that DPH-RL both improves in-domain Pass@1 and Pass@k scores and effectively prevents catastrophic forgetting on out-of-domain tasks.
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="./figures/image-1.png" width="450" alt="Method"><br>
+        <i>In-Domain</i>
+      </td>
+    </tr>
+  </table>
+</p>
+<p align='center'> <i>
+</i></p>
 
 
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="./figures/result.png" width="" alt="Method"><br>
+        <i>OOD and Keep</i>
+      </td>
+    </tr>
+  </table>
+</p>
+<p align='center'> <i>
+</i></p>
 # ✨Getting started
 
 
@@ -79,3 +132,19 @@ default set `use_kl_loss=False`
 | **reverse_kl** | **Reverse KL**|  `data.sft_files=None`<br> `data.sft_pt=None` | 0.01~0.05|
 | **alpha** | **$\alpha$ divergence** |  `data.sft_files=None`<br> `data.sft_pt=None` | 0.01~0.05|
 
+<a id="citation"></a>
+## 📑 Cite
+
+If this paper can help you, please cite it:
+
+```bibtex
+@misc{li2025choicedivergenceneglectedkey,
+      title={The Choice of Divergence: A Neglected Key to Mitigating Diversity Collapse in Reinforcement Learning with Verifiable Reward}, 
+      author={Long Li and Jiaran Hao and Jason Klein Liu and Zhijian Zhou and Xiaoyu Tan and Wei Chu and Zhe Wang and Shirui Pan and Chao Qu and Yuan Qi},
+      year={2025},
+      eprint={2509.07430},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2509.07430}, 
+}
+```
