@@ -39,7 +39,7 @@ Math and SQL generation experiments show that DPH-RL both improves in-domain Pas
   <table>
     <tr>
       <td align="center">
-        <img src="./figures/image-1.png" width="450" alt="Method"><br>
+        <img src="./figures/image-1.png" width="" alt="Method"><br>
         <i>In-Domain</i>
       </td>
     </tr>
