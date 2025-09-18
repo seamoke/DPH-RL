@@ -192,7 +192,7 @@ if [ "$NODE_RANK" = "0" ]; then
     # Example usage (to set the environment variable):
     export GLOO_SOCKET_IFNAME=$(find_interface)
     echo "$GLOO_SOCKET_IFNAME" > ip_tmp/gloo_${EXPERIMENT_NAME}.txt
-        #    --eval_data /home/ma-user/work/haozhe/workspace/OpenRLHF/data/0209_eval_amcaime_queries \
+        
     # if [ $nnode -gt 1 ]; then
     sleep 45
     

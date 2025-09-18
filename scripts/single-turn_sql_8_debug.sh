@@ -4,7 +4,6 @@
 
 set -x
 ulimit -n 65535
-# cp -r /home/ma-user/work/jiaran/MLM-master/Megatron-LM/cache/* /cache
 
 cd your_path
 PROJECT_DIR="$(pwd)"
@@ -32,7 +31,7 @@ export SWANLAB_API_KEY='your_swanlab_token'
 export MODEL_PATH=your_model_path/Qwen3-4B-Base
 export MODEL_PATH=your_model_path/Qwen2.5-0.5B-Instruct
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ma-user/anaconda3/envs/logic/lib/python3.10/site-packages/nvidia/cudnn/lib
+
 maxlen=${maxlen:-"4096"}
 nsample=${nsample:-"1"}
 

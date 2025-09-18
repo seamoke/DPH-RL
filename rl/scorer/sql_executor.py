@@ -771,8 +771,8 @@ if __name__ == "__main__":
     # print(program_extract(query, program='sql', mode='last'))
     # print(excecutor.exec_sql('/cache/poker_player/poker_player.sqlite', ['```sql\nSELECT Earnings FROM poker_player ORDER BY Earnings DESC\n```'], keep_distinct=True))
  
-    sqlite_file = "/home/ma-user/work/liushan/projects/nl2sql/data/spider_data/database/phone_1/phone_1.sqlite"
-    sqlite_sql = "/home/ma-user/work/liushan/projects/nl2sql/data/spider_data/database/phone_1/schema.sql"
+    sqlite_file = "phone_1/phone_1.sqlite"
+    sqlite_sql = "phone_1/schema.sql"
     sqls = ["select * from phone limit 1",
             "select * from phone limit 1"]
 
