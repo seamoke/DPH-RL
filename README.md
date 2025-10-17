@@ -6,7 +6,7 @@
 <p align="center">
   <!-- Badges: replace placeholders with real links -->
   <a href="https://arxiv.org/abs/2509.07430"><img src="https://img.shields.io/badge/arXiv-2509.07430-B31B1B.svg" alt="arXiv"></a>
-  <a href="https://github.com/EIT-NLP/LLaSO"><img src="https://img.shields.io/github/stars/seamoke/DPH-RL?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/seamoke/DPH-RL"><img src="https://img.shields.io/github/stars/seamoke/DPH-RL?style=social" alt="GitHub Stars"></a>
   <a href="#citation"><img src="https://img.shields.io/badge/Cite-BibTeX-9cf.svg" alt="Cite"></a>
 </p>
 
