@@ -1,6 +1,6 @@
 <div align="center">
 
-# The Choice of Divergence: A Neglected Key to Mitigating Diversity Collapse in Reinforcement Learning with Verifiable Reward
+# [ICLR 2026] The Choice of Divergence: A Neglected Key to Mitigating Diversity Collapse in Reinforcement Learning with Verifiable Reward
 
 
 <p align="center">
